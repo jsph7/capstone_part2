@@ -67,7 +67,7 @@ The goal is to predict whether the stock price will go up or down in 100 busines
 
 ## IV. Results
 
-#### Data Analysis
+### Data Analysis
 Let's take a look at how many articles made correct prediction of future price drop every quarters in sample period. Ratio of correct prediction to total number of short recommendations varies a lot with time. In order to deal with the class imbalance problem, precision is used as the performance measure.
 
 <p align="center"><img src="images/price_direction_yrqt.png" width="800"></p>
@@ -81,7 +81,7 @@ Out of 30 attributes, both firm size and utilization clearly distinguish the sho
 
 All the other attributes such as the sentiment variables and the article characteristics didn't show any significant relationship with the future price direction. More details can be found in the notebooks.   
 
-#### Predictive Modeling
+### Predictive Modeling
 
 Through time-series cross validation, logistic regression, gradient boosting, XGBoost and SVC are selected as the best individual models. Fine-tuning of hyperparameters are performed only for those selected models. Let's compare the performance of the selected individual models and ensemble models.
 
