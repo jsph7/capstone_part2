@@ -19,8 +19,8 @@ The goal is to predict whether the stock price will go up or down in 100 busines
 
 #### Features
 * **y**: sign of 100-day holding period return (100d_ret)
-> * y = 1 if 100d_ret < 0 (correct short recommendation)
-> * y = 0 if 100d_ret >= 0 (wrong short recommendation)
+  * y = 1 if 100d_ret < 0 (correct short recommendation)
+  * y = 0 if 100d_ret >= 0 (wrong short recommendation)
 
 * **X**: 30 attributes (28 numerical and 2 categorical) are selected based on the results of the capstone part 1 and finance literatures. For more details, please refer to the capstone part 1.
 > * Market cap: firm size calculated as (stock price) x (share outstanding)
