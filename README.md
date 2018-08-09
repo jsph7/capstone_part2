@@ -53,9 +53,10 @@ The goal is to predict whether the stock price will go up or down in 100 busines
 
 #### Method
 
+1. For each model, perform "**time-series cross validation**" -> Calculate average and standard deviation of precisions from each validation -> Select best models.
+
 <p align="center"><img src="images/ts_cross_validation.png" width="600"></p>
 
-1. For each model, perform "**time-series cross validation**" -> Calculate average and standard deviation of precisions from each validation -> Select best models.
    - The goal of time series forecasting is to make accurate predictions about the future. The fast and powerful methods that we rely on in machine learning, such as using train-test splits and k-fold cross validation, do not work in the case of time series data. This is because they ignore the temporal components inherent in the problem. Therefore, time-series cross validation is used in this project.
 
 2. **Fine-tune hyperparameters** of the selected models using GridSearchCV for better prediction -> Make predictions on the test set.
